@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "开卡申请管理重新提交",
+  "version": "1.29.0",
+  "description": "自动打开待处理申请、选择已有地址并自动点击重新提交。",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://example.com/*"
+      ],
+      "js": [
+        "helper.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
